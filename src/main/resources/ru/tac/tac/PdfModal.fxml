@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="ru.tac.tac.PdfModalController"
+           prefWidth="800" prefHeight="1000">
+    <ImageView fx:id="pdfImageView" preserveRatio="true"/>
+</StackPane>

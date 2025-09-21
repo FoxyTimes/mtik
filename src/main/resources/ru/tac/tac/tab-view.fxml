@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="ru.tac.tac.TabViewController">
+
+    <center>
+        <TabPane fx:id="tabPane"/>
+    </center>
+
+</BorderPane>

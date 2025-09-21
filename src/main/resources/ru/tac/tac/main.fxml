@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.SplitPane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="ru.tac.tac.MainController">
+
+    <top>
+        <VBox>
+            <fx:include source="menu-bar.fxml" fx:id="menuBar"/>
+        </VBox>
+    </top>
+
+    <center>
+        <SplitPane orientation="VERTICAL" dividerPositions="0.9">
+            <items>
+                <fx:include source="tab-view.fxml" fx:id="tabView"/>
+                <fx:include source="terminal.fxml" fx:id="terminal"/>
+            </items>
+        </SplitPane>
+    </center>
+
+</BorderPane>

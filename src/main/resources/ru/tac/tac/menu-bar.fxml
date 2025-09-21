@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ru.tac.tac.MenuBarController">
+
+    <top>
+        <HBox spacing="5" alignment="CENTER_LEFT">
+            <MenuBar HBox.hgrow="ALWAYS">
+                <menus>
+                    <Menu text="%menu.file">
+                        <items>
+                            <MenuItem text="%menu.file.create" onAction="#onNew"/>
+                            <MenuItem text="%menu.file.open" onAction="#onOpen"/>
+                            <MenuItem text="%menu.file.saveAs" onAction="#onSaveAs"/>
+                            <SeparatorMenuItem/>
+                            <MenuItem text="%menu.file.exit" onAction="#onExit"/>
+                        </items>
+                    </Menu>
+
+                    <Menu text="%menu.settings">
+                        <items>
+                            <Menu text="%menu.settings.lang">
+                                <items>
+                                    <MenuItem text="Русский" onAction="#onRussian"/>
+                                    <MenuItem text="English" onAction="#onEnglish"/>
+                                </items>
+                            </Menu>
+                        </items>
+                    </Menu>
+
+                    <Menu text="%menu.documentation">
+                        <items>
+                            <MenuItem text="%menu.documentation.title" onAction="#onAboutTitlePage"/>
+                        </items>
+                    </Menu>
+                </menus>
+            </MenuBar>
+
+            <Button onAction="#onRun"
+                    style="-fx-background-color: transparent; -fx-cursor: hand;">
+                <graphic>
+                    <ImageView fitWidth="20" fitHeight="20" preserveRatio="true">
+                        <image>
+                            <Image url="@assets/run_button.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+    </top>
+</BorderPane>
+

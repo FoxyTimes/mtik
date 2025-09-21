@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import org.fxmisc.richtext.CodeArea?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ru.tac.tac.TabContentController">
+    <CodeArea fx:id="codeArea"
+              AnchorPane.topAnchor="0.0"
+              AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0"/>
+</AnchorPane>
